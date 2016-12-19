@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SomeObject } from "./some-object.model";
 
-const routes: any = [
+const routes: Routes = [
   {
     path: '',
-    otherProperty: new SomeObject(),
-    children: []
+    children: [],
+    data: {
+      otherProperty: new SomeObject()
+    }
   }
 ];
 
